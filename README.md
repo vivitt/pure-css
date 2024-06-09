@@ -9,6 +9,6 @@ This is a repo to experiment and learn to draw with css.
 
 [Alfajor](https://en.wikipedia.org/wiki/Alfajor) is a common (and delicious) sweet snack among several regions in Latin America. It is my fav argentinian sweet snack and I started out with this CSS art to parcicipate in the DEV Frontend Challenge. 
 
-### 1. Pride Month 🌈
+### 2. Pride Month 🌈
 
 <img width="397" alt="Screen Shot 2024-06-09 at 04 00 16" src="https://github.com/vivitt/pure-css/assets/91918142/6104f35e-b47b-4898-b9c5-6b0f4da4b5f7">

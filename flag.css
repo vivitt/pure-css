@@ -1,6 +1,7 @@
 
 .flag {
  --color-sky: #8df8fe;
+ --color-cloud: #ececec;
  --color-red: #d30a0a;
  --color-orange: #ec7b02;
  --color-yellow: #fefa07;
@@ -16,8 +17,9 @@
 .flag__container {
     width: 320px;
     height: 320px;
-    transform: translate(35%, 25%);
+    transform: translate(35%, -45%);
     display: flex;
+   
 }
 
 .flag__container__stick {
@@ -1260,10 +1262,263 @@
 }
 
 .flag__cloud {
-    height: 136px;
-    width: 264px;
-    background-color: #ffffff ;
+    height: 80px;
+    width: 214px;
+    background-color: var(--color-sky);   
+    transform: translate(-100%, 35%); 
+    animation: cloud 40s linear infinite;
+}
+.flag__cloud:nth-child(2) {
+    transform: translate(-100%, 55%);
+    transform:  scale(2, 0.5);
+    animation: cloud 20s linear infinite;
+}
+
+.flag__cloud:nth-child(3) {
+    transform: translate(-100%, 55%);
+    animation: cloud 50s 5s linear infinite;
+}
+
+
+.flag__cloud__pixels {
+    height: 8px;
+    width: 8px;
     box-shadow: 
-    16px 8px var(--color-sky),
+
+
+    0px 24px var(--color-cloud),
+    0px 32px var(--color-cloud),
+    8px 16px var(--color-cloud),
+    8px 24px var(--color-cloud),
+    8px 32px var(--color-cloud),
+    8px 40px var(--color-cloud),
     
+    16px 8px var(--color-cloud),
+    16px 16px var(--color-cloud),
+    16px 24px var(--color-cloud),
+    16px 32px var(--color-cloud),
+    16px 40px var(--color-cloud),
+    16px 48px var(--color-cloud),
+    16px 56px var(--color-cloud),
+ 
+    24px 8px var(--color-cloud),
+    24px 16px rgb(226, 226, 226),
+    24px 24px var(--color-cloud),
+    24px 32px var(--color-cloud),
+    24px 40px var(--color-cloud),
+    24px 48px var(--color-cloud),
+    24px 56px var(--color-cloud),
+    24px 56px var(--color-cloud),
+
+    32px 0px rgb(226, 226, 226),
+    32px 8px rgb(226, 226, 226),
+    32px 16px var(--color-cloud),
+    32px 24px var(--color-cloud),
+    32px 32px var(--color-cloud),
+    32px 40px var(--color-cloud),
+    32px 48px var(--color-cloud),
+    32px 56px var(--color-cloud),
+    32px 64px var(--color-cloud),
+
+    40px 0px rgb(226, 226, 226),
+    40px 8px rgb(226, 226, 226),
+    40px 16px var(--color-cloud),
+    40px 24px var(--color-cloud),
+    40px 32px var(--color-cloud),
+    40px 40px var(--color-cloud),
+    40px 48px var(--color-cloud),
+    40px 56px var(--color-cloud),
+    40px 64px var(--color-cloud),
+
+    48px 0px rgb(226, 226, 226),
+    48px 8px var(--color-cloud),
+    48px 16px var(--color-cloud),
+    48px 24px var(--color-cloud),
+    48px 32px var(--color-cloud),
+    48px 40px var(--color-cloud),
+    48px 48px var(--color-cloud),
+    48px 56px var(--color-cloud),
+    48px 64px var(--color-cloud),
+
+    56px 8px rgb(226, 226, 226),
+    56px 16px var(--color-cloud),
+    56px 24px var(--color-cloud),
+    56px 32px var(--color-cloud),
+    56px 40px var(--color-cloud),
+    56px 48px var(--color-cloud),
+    56px 56px var(--color-cloud),
+    56px 64px var(--color-cloud),
+
+    64px 8px var(--color-cloud),
+    64px 16px var(--color-cloud),
+    64px 24px var(--color-cloud),
+    64px 32px var(--color-cloud),
+    64px 40px var(--color-cloud),
+    64px 48px var(--color-cloud),
+    64px 56px var(--color-cloud),
+    64px 64px var(--color-cloud),
+
+    72px 16px var(--color-cloud),
+    72px 24px var(--color-cloud),
+    72px 32px var(--color-cloud),
+    72px 40px var(--color-cloud),
+    72px 48px var(--color-cloud),
+    72px 56px var(--color-cloud),
+
+    80px 8px var(--color-cloud),
+    80px 16px var(--color-cloud),
+    80px 24px var(--color-cloud),
+    80px 32px var(--color-cloud),
+    80px 40px var(--color-cloud),
+    80px 48px var(--color-cloud),
+    80px 56px var(--color-cloud),
+    80px 64px var(--color-cloud),
+
+    88px 0px rgb(226, 226, 226),
+    88px 8px var(--color-cloud),
+    88px 16px var(--color-cloud),
+    88px 24px var(--color-cloud),
+    88px 32px var(--color-cloud),
+    88px 40px var(--color-cloud),
+    88px 48px var(--color-cloud),
+    88px 56px var(--color-cloud),
+    88px 64px var(--color-cloud),
+    
+    96px 0px var(--color-cloud),
+    96px 8px var(--color-cloud),
+    96px 16px var(--color-cloud),
+    96px 24px var(--color-cloud),
+    96px 32px var(--color-cloud),
+    96px 40px var(--color-cloud),
+    96px 48px var(--color-cloud),
+    96px 56px var(--color-cloud),
+    96px 64px var(--color-cloud),
+
+    104px 0px var(--color-cloud),
+    104px 8px var(--color-cloud),
+    104px 16px var(--color-cloud),
+    104px 24px var(--color-cloud),
+    104px 32px var(--color-cloud),
+    104px 40px var(--color-cloud),
+    104px 48px var(--color-cloud),
+    104px 56px var(--color-cloud),
+    104px 64px var(--color-cloud),
+
+    112px 8px var(--color-cloud),
+    112px 16px var(--color-cloud),
+    112px 24px var(--color-cloud),
+    112px 32px var(--color-cloud),
+    112px 40px var(--color-cloud),
+    112px 48px var(--color-cloud),
+    112px 56px var(--color-cloud),
+    112px 64px var(--color-cloud),
+
+    120px 16px rgb(226, 226, 226),
+    120px 24px var(--color-cloud),
+    120px 32px var(--color-cloud),
+    120px 40px var(--color-cloud),
+    120px 48px var(--color-cloud),
+    120px 56px var(--color-cloud),
+    120px 64px var(--color-cloud),
+
+    128px 8px rgb(226, 226, 226),
+    128px 16px var(--color-cloud),
+    128px 24px var(--color-cloud),
+    128px 32px var(--color-cloud),
+    128px 40px var(--color-cloud),
+    128px 48px var(--color-cloud),
+    128px 56px var(--color-cloud),
+    128px 64px var(--color-cloud),
+   
+    136px 8px var(--color-cloud),
+    136px 16px var(--color-cloud),
+    136px 24px var(--color-cloud),
+    136px 32px var(--color-cloud),
+    136px 40px var(--color-cloud),
+    136px 48px var(--color-cloud),
+    136px 56px var(--color-cloud),
+    136px 64px var(--color-cloud),
+
+    144px 16px var(--color-cloud),
+    144px 24px var(--color-cloud),
+    144px 32px var(--color-cloud),
+    144px 40px var(--color-cloud),
+    144px 48px var(--color-cloud),
+    144px 56px rgb(226, 226, 226),
+
+    152px 8px var(--color-cloud),
+    152px 16px var(--color-cloud),
+    152px 24px var(--color-cloud),
+    152px 32px var(--color-cloud),
+    152px 40px var(--color-cloud),
+    152px 48px var(--color-cloud),
+    152px 56px var(--color-cloud),
+    152px 64px rgb(226, 226, 226),
+
+    160px 0px var(--color-cloud),
+    160px 8px var(--color-cloud),
+    160px 16px var(--color-cloud),
+    160px 24px var(--color-cloud),
+    160px 32px var(--color-cloud),
+    160px 40px var(--color-cloud),
+    160px 48px var(--color-cloud),
+    160px 56px var(--color-cloud),
+    160px 64px rgb(226, 226, 226),
+
+    168px 0px var(--color-cloud),
+    168px 8px var(--color-cloud),
+    168px 16px var(--color-cloud),
+    168px 24px var(--color-cloud),
+    168px 32px var(--color-cloud),
+    168px 40px var(--color-cloud),
+    168px 48px var(--color-cloud),
+    168px 56px var(--color-cloud),
+    168px 64px rgb(226, 226, 226),
+    
+    176px 8px var(--color-cloud),
+    176px 16px var(--color-cloud),
+    176px 24px var(--color-cloud),
+    176px 32px var(--color-cloud),
+    176px 40px var(--color-cloud),
+    176px 48px var(--color-cloud),
+    176px 56px var(--color-cloud),
+    176px 64px var(--color-cloud),
+   
+    184px 8px var(--color-cloud),
+    184px 16px var(--color-cloud),
+    184px 24px var(--color-cloud),
+    184px 32px var(--color-cloud),
+    184px 40px var(--color-cloud),
+    184px 48px var(--color-cloud),
+    184px 56px var(--color-cloud),
+    184px 64px var(--color-cloud),
+
+    192px 16px var(--color-cloud),
+    192px 24px var(--color-cloud),
+    192px 32px var(--color-cloud),
+    192px 40px var(--color-cloud),
+    192px 48px var(--color-cloud),
+    192px 56px var(--color-cloud),
+    192px 64px var(--color-cloud),
+
+    200px 24px var(--color-cloud),
+    200px 32px var(--color-cloud),
+    200px 40px var(--color-cloud),
+    200px 48px var(--color-cloud),
+    200px 56px var(--color-cloud),
+    200px 64px var(--color-cloud),
+
+    208px 32px var(--color-cloud),
+    208px 40px var(--color-cloud),
+    208px 48px var(--color-cloud),
+    208px 56px var(--color-cloud); 
+}
+
+@keyframes cloud {
+    0% {
+        transform: translate(-100%, 35%);
+    }
+    100% {
+        transform: translate(250%, 35%);
+    }
 }
